@@ -3,30 +3,30 @@
     <Card shadow>
       <Row>
         <i-col span="4">
-          <Button @click="createTagParams">添加一个标签</Button>
+          <Button @click="createTagParams">Add Label</Button>
         </i-col>
         <i-col span="20">
-          <p>动态路由，添加params</p>
+          <p>Dynamic Router</p>
         </i-col>
       </Row>
     </Card>
     <Card shadow style="margin-top: 10px;">
       <Row>
         <i-col span="4">
-          <Button @click="createTagQuery">添加一个标签</Button>
+          <Button @click="createTagQuery">Add a Label</Button>
         </i-col>
         <i-col span="20">
-          <p>动态路由，添加query</p>
+          <p>Dynamic Router</p>
         </i-col>
       </Row>
     </Card>
     <Card shadow style="margin-top: 10px;">
       <Row>
         <i-col span="4">
-          <Button @click="handleCloseTag">关闭工具方法页</Button>
+          <Button @click="handleCloseTag">Close</Button>
         </i-col>
         <i-col span="20">
-          <p>手动关闭页面</p>
+          <p>Manual Close</p>
         </i-col>
       </Row>
     </Card>

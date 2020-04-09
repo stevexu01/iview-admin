@@ -3,10 +3,10 @@
 </style>
 <template>
   <div>
-    <Card title="导入EXCEL">
+    <Card title="Expert EXCEL">
       <Row>
         <Upload action="" :before-upload="handleBeforeUpload" accept=".xls, .xlsx">
-          <Button icon="ios-cloud-upload-outline" :loading="uploadLoading" @click="handleUploadFile">上传文件</Button>
+          <Button icon="ios-cloud-upload-outline" :loading="uploadLoading" @click="handleUploadFile">Upload</Button>
         </Upload>
       </Row>
       <Row>

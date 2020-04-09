@@ -42,7 +42,7 @@ export default [
         name: 'home',
         meta: {
           hideInMenu: true,
-          title: '首页',
+          title: 'Home',
           notCache: true,
           icon: 'md-home'
         },
@@ -54,8 +54,8 @@ export default [
     path: '',
     name: 'doc',
     meta: {
-      title: '文档',
-      href: 'https://lison16.github.io/iview-admin-doc/#/',
+      title: 'Document',
+      href: 'https://v15.vuetifyjs.com/en/',
       icon: 'ios-book'
     }
   },
@@ -251,7 +251,7 @@ export default [
     name: 'excel',
     meta: {
       icon: 'ios-stats',
-      title: 'EXCEL导入导出'
+      title: 'EXCEL Import/Export'
     },
     component: Main,
     children: [
@@ -260,7 +260,7 @@ export default [
         name: 'upload-excel',
         meta: {
           icon: 'md-add',
-          title: '导入EXCEL'
+          title: 'Import EXCEL'
         },
         component: () => import('@/view/excel/upload-excel.vue')
       },
@@ -269,7 +269,7 @@ export default [
         name: 'export-excel',
         meta: {
           icon: 'md-download',
-          title: '导出EXCEL'
+          title: 'Export EXCEL'
         },
         component: () => import('@/view/excel/export-excel.vue')
       }
@@ -366,7 +366,7 @@ export default [
         name: 'directive_page',
         meta: {
           icon: 'ios-navigate',
-          title: '指令'
+          title: 'Order'
         },
         component: () => import('@/view/directive/directive.vue')
       }
@@ -377,7 +377,7 @@ export default [
     name: 'multilevel',
     meta: {
       icon: 'md-menu',
-      title: '多级菜单'
+      title: 'Multi Level'
     },
     component: Main,
     children: [
@@ -386,7 +386,7 @@ export default [
         name: 'level_2_1',
         meta: {
           icon: 'md-funnel',
-          title: '二级-1'
+          title: 'level-2-1'
         },
         component: () => import('@/view/multilevel/level-2-1.vue')
       },
@@ -397,7 +397,7 @@ export default [
           access: ['super_admin'],
           icon: 'md-funnel',
           showAlways: true,
-          title: '二级-2'
+          title: 'level-2-2'
         },
         component: parentView,
         children: [
@@ -406,7 +406,7 @@ export default [
             name: 'level_2_2_1',
             meta: {
               icon: 'md-funnel',
-              title: '三级'
+              title: 'level3'
             },
             component: () => import('@/view/multilevel/level-2-2/level-2-2-1.vue')
           },
@@ -415,7 +415,7 @@ export default [
             name: 'level_2_2_2',
             meta: {
               icon: 'md-funnel',
-              title: '三级'
+              title: 'Level3'
             },
             component: () => import('@/view/multilevel/level-2-2/level-2-2-2.vue')
           }
@@ -426,7 +426,7 @@ export default [
         name: 'level_2_3',
         meta: {
           icon: 'md-funnel',
-          title: '二级-3'
+          title: 'level-2-3'
         },
         component: () => import('@/view/multilevel/level-2-3.vue')
       }

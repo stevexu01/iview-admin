@@ -3,9 +3,9 @@
 </style>
 <template>
   <div>
-    <Card title="导出EXCEL">
+    <Card title="Export EXCEL">
       <Row>
-        <Button icon="md-download" :loading="exportLoading" @click="exportExcel">导出文件</Button>
+        <Button icon="md-download" :loading="exportLoading" @click="exportExcel">Export</Button>
       </Row>
     </Card>
     <Row class="margin-top-10">
@@ -22,15 +22,15 @@ export default {
       exportLoading: false,
       tableTitle: [
         {
-          title: '一级分类',
+          title: 'Category1',
           key: 'category1'
         },
         {
-          title: '二级分类',
+          title: 'Category2',
           key: 'category2'
         },
         {
-          title: '三级分类',
+          title: 'Category3',
           key: 'category3'
         }
       ],

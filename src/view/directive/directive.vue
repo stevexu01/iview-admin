@@ -5,13 +5,13 @@
         <Card>
           <Row>
             <i-col span="8">
-              <Button type="primary" @click="showModal">显示可拖动弹窗</Button>
+              <Button type="primary" @click="showModal">Display Dragger</Button>
               <br/>
-              <Button v-draggable="buttonOptions" class="draggable-btn">这个按钮也是可以拖动的</Button>
+              <Button v-draggable="buttonOptions" class="draggable-btn">Draggable </Button>
             </i-col>
             <i-col span="16">
               <div class="intro-con">
-                &lt;Modal v-draggable="options" v-model="visible"&gt;标题&lt;/Modal&gt;
+                &lt;Modal v-draggable="options" v-model="visible"&gt;Title&lt;/Modal&gt;
                 <pre class="code-con">
     options = {
       trigger: '.ivu-modal-body',
@@ -24,7 +24,7 @@
         </Card>
       </i-col>
       <Modal v-draggable="options" v-model="modalVisible">
-        拖动这里即可拖动整个弹窗
+        Drag here
       </Modal>
     </Row>
     <Row style="margin-top: 10px;">
@@ -47,10 +47,10 @@
     clipOptions: {
       value: this.inputValue,
       success: (e) => {
-        this.$Message.success('复制成功')
+        this.$Message.success('Successful')
       },
       error: () => {
-        this.$Message.error('复制失败')
+        this.$Message.error('Successful')
       }
     }
                 </pre>
@@ -60,7 +60,7 @@
         </Card>
       </i-col>
       <Modal v-draggable="options" v-model="modalVisible">
-        拖动这里即可拖动整个弹窗
+        Drag here
       </Modal>
     </Row>
   </div>
@@ -82,7 +82,7 @@ export default {
         body: '.draggable-btn'
       },
       statu: 1,
-      inputValue: '这是输入的内容'
+      inputValue: 'Enter Input'
     }
   },
   computed: {

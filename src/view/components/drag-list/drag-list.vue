@@ -1,30 +1,6 @@
 <template>
   <div>
-    <Card>
-      <div class="drag-box-card">
-
-        <!-- 切记设置list1和list2属性时，一定要添加.sync修饰符 -->
-        <drag-list :list1.sync="list1" :list2.sync="list2" :dropConClass="dropConClass" @on-change="handleChange">
-          <h3 slot="left-title">待办事项</h3>
-          <Card class="drag-item" slot="left" slot-scope="left">{{ left.itemLeft.name }}</Card>
-          <h3 slot="right-title">完成事项</h3>
-          <Card class="drag-item" slot="right" slot-scope="right">{{ right.itemRight.name }}</Card>
-        </drag-list>
-
-      </div>
-      <div class="handle-log-box">
-        <h3>操作记录</h3>
-        <div class="handle-inner-box">
-          <p v-for="(item, index) in handleList" :key="`handle_item_${index}`">{{ item }}</p>
-        </div>
-      </div>
-      <div class="res-show-box">
-        <pre>{{ list1 }}</pre>
-      </div>
-      <div class="res-show-box">
-        <pre>{{ list2 }}</pre>
-      </div>
-    </Card>
+    
   </div>
 </template>
 <script>
